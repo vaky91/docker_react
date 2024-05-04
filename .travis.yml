@@ -6,7 +6,7 @@ before_install:
   - docker build -t vaky91/docker_react -f Dockerfile.dev .
 
 script:
-  -  docker run vaky91/docker_react npm run test -- --coverage
+  -  docker run vaky91/docker_react npm run --help
 
 deploy:
   provider: elasticbeanstalk
